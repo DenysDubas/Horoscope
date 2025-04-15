@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import { StarIcon, MoonIcon, SunIcon, HeartIcon, BriefcaseIcon, HeartPulseIcon } from '@heroicons/react/24/solid';
+import { StarIcon, MoonIcon, SunIcon, HeartIcon, BriefcaseIcon } from '@heroicons/react/24/solid';
 
 const zodiacSigns = [
   'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
@@ -122,7 +122,7 @@ const Home = () => {
               <h3>{pred.date}</h3>
               <div className={styles.scores}>
                 <div>
-                  <HeartPulseIcon width={24} />
+                  <HeartIcon width={24} />
                   <span>Health: {pred.health}</span>
                 </div>
                 <div>
