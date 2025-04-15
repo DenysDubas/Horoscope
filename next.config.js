@@ -1,7 +1,12 @@
 const isGithubPages = process.env.NODE_ENV === 'production';
 
-module.exports = {
+const repo = 'Horoscope';
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
-  basePath: isGithubPages ? '/Horoscope' : '',
-  assetPrefix: isGithubPages ? '/Horoscope/' : '',
+  basePath: isGithubPages ? `/${repo}` : '',
+  assetPrefix: isGithubPages ? `/${repo}/` : '',
 };
+
+module.exports = nextConfig;
