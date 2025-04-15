@@ -1,7 +1,7 @@
+const isGithubPages = process.env.NODE_ENV === 'production';
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = {
+  output: 'export',
+  basePath: isGithubPages ? '/Horoscope' : '',
+  assetPrefix: isGithubPages ? '/Horoscope/' : '',
 };
-
-module.exports = nextConfig;

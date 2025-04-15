@@ -7,7 +7,9 @@
     "dev": "next dev --port 3000 --hostname 0.0.0.0",
     "build": "next build",
     "start": "next start --port 3000 --hostname 0.0.0.0",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
